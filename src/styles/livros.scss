@@ -12,9 +12,26 @@
 
         @media (max-width: 768px) {
             display: block;
+            align-items: center;
+        }
+        @media (max-width: 1024px) {
+            display: block;
+            align-items: center;
         }
 
         &_books {
+
+            @media (max-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (max-width: 1024px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
             img {
                 width: 100%;
                 max-width: 450px;
@@ -30,6 +47,9 @@
             @media (max-width: 768px) {
                 padding: 20px;
             }
+            @media (max-width: 1024px) {
+                padding: 20px;
+            }
 
             p {
                 margin-top: 20px;
@@ -37,6 +57,13 @@
 
             button {
                 margin-top: 20px;
+
+                @media (max-width: 768px) {
+                    margin-top: 30px;
+                }
+                @media (max-width: 1024px) {
+                    margin-top: 40px;
+                }
             }
         }
     }
