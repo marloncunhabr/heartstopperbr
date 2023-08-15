@@ -12,6 +12,7 @@
 
     @media (max-width: 768px) {
         display: block;
+
     }
 
     @media (max-width: 1024px) {
@@ -22,11 +23,13 @@
         @media (max-width: 768px) {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         @media (max-width: 1024px) {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         img {
@@ -46,11 +49,13 @@
         @media (max-width: 768px) {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         @media (max-width: 1024px) {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         ul {
@@ -90,9 +95,13 @@
                     text-decoration: none;
 
                     img {
-                        width: 30px;
+                        width: 28px;
                         filter: invert(100%);
                         opacity: 0.8;
+        
+                        @media (max-width: 1024px) {
+                            width: 24px;
+                        }
                     }
                 }
             }
