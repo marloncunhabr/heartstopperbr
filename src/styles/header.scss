@@ -36,7 +36,7 @@
             padding-top: 5px;
 
             @media (max-width: 768px) {
-                max-width: 150px;
+                width: 300px;
             }
         }
     }
@@ -68,7 +68,7 @@
                 justify-content: center;
                 gap: 10px;
             }
-            
+
 
             li {
                 letter-spacing: 2px;
