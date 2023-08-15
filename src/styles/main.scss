@@ -1,0 +1,114 @@
+@use 'hero';
+@use 'variaveis';
+@use 'header';
+@use 'livros';
+@use 'netflix';
+@use 'personagens';
+@use 'novidades';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: variaveis.$corDeFundoPrincipal;
+}
+
+@mixin text($fontSize: 16px, ) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoSecundario;
+}
+
+@mixin title($fontSize: 28px) {
+    @include text($fontSize);
+    color: variaveis.$corInfoImportantes;
+}
+
+
+
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(14px);
+}
+
+
+
+
+
+
+.title--big {
+    @include title(44px);
+    font-family: caveat;
+}
+
+.title {
+    @include title(40px);
+    font-family: caveat;
+}
+
+.title--small {
+    @include title(28px);
+    font-family: caveat;
+}
+
+
+
+
+.destaque-text {
+    @include text(18px);
+    color: variaveis.$corInfoImportantes;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Jost;
+    &:hover {
+        color: variaveis.$corTextoSecundario;
+    }
+}
+
+.button--normal {
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0 20px;
+    height: 50px;
+    width: auto;
+    background-color: variaveis.$corBotoes;
+    border: solid 1px variaveis.$corBotoes;
+    cursor: pointer;
+    color: variaveis.$corTextoPrincipal;
+
+    &:hover {
+        color: variaveis.$corTextoSecundario;
+        border: solid 1px variaveis.$corTextoSecundario;
+    }
+}
+
+.button--diferente {
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0 20px;
+    height: 50px;
+    width: auto;
+    background-color: variaveis.$corBotoesdif;
+    border: solid 1px variaveis.$corBotoesdif;
+    cursor: pointer;
+    color: variaveis.$corTextoPrincipal;
+
+    &:hover {
+        color: variaveis.$corTextoSecundario;
+        border: solid 1px variaveis.$corTextoSecundario;
+    }
+}

@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+.personagens {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-color: variaveis.$corDeFundoSecundario;
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
+
+        &__personagens {
+            img {
+                width: 100%;
+                max-width: 600px;
+                border-radius: 10px;
+            }
+        }
+        &__descricao {
+            text-align: center;
+
+            p{
+                padding: 20px;
+            }
+        }
+    }
+}
